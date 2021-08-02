@@ -65,6 +65,10 @@ add_action( 'after_setup_theme', function() {
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		add_theme_support( 'post-formats', array(
+			'aside',
+		) );
+
 		/**
 		 * By add_image_size( 'initiator-small-thumbnails', 324, 324, true );. This should be used for content in the home for blogs.
 		 */

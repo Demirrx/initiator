@@ -86,3 +86,12 @@ add_filter( 'get_the_archive_title', function() {
 	}
 	return $title;
 } );
+
+/**
+ * Change Tempalate Path
+ * 
+ * @since  1.0.0
+ */
+add_filter( 'backdrop/template/path', function() {
+	return 'public/views';
+} );
