@@ -4,25 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aceb6067adb0781f61bb769fc831470b",
+    "content-hash": "904bb6b18df47588941860ffc4bd3f16",
     "packages": [
         {
             "name": "benlumia007/backdrop-core",
-            "version": "dev-the-view-system",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-core.git",
-                "reference": "1684fd09e9efd10428e8c47984bf432dc8bccce3"
+                "reference": "f7e59f22cdaa5747bb499daa282935a25da652b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/1684fd09e9efd10428e8c47984bf432dc8bccce3",
-                "reference": "1684fd09e9efd10428e8c47984bf432dc8bccce3",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/f7e59f22cdaa5747bb499daa282935a25da652b2",
+                "reference": "f7e59f22cdaa5747bb499daa282935a25da652b2",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -54,9 +55,9 @@
             ],
             "support": {
                 "issues": "https://github.com/benlumia007/backdrop-core/issues",
-                "source": "https://github.com/benlumia007/backdrop-core/tree/the-view-system"
+                "source": "https://github.com/benlumia007/backdrop-core/tree/develop"
             },
-            "time": "2021-08-02T06:36:44+00:00"
+            "time": "2021-08-03T04:45:27+00:00"
         }
     ],
     "packages-dev": [],
@@ -68,7 +69,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.6"
+        "php": ">=7.3.24"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
