@@ -27,6 +27,6 @@
     },
     "require": {
         "php": ">=7.3.24",
-        "benlumia007/backdrop-core": "dev-develop"
+        "benlumia007/backdrop-core": "^3.0.0"
 	}
 }
