@@ -10,7 +10,7 @@
 
 /**
  * Create a new framework instance
- *
+ *x
  * This will create an instance of the framework allowing you to initialize the theme.
  */
 $initiator = new Benlumia007\Backdrop\Framework();
