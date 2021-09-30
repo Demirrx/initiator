@@ -20,7 +20,8 @@ $initiator = new Benlumia007\Backdrop\Framework();
  */
 // $initiator->provider( Initiator\Sidebar\Provider::class );
 // $initiator->provider( Initiator\Menu\Provider::class );
-$initiator->provider( Benlumia007\Backdrop\Template\View\View\Provider::class );
+$initiator->provider( Benlumia007\Backdrop\Template\Hierarchy\Provider::class );
+$initiator->provider( Benlumia007\Backdrop\Template\View\Provider::class );
 
 /**
  * Boot the Framework
