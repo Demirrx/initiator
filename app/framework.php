@@ -18,8 +18,9 @@ $initiator = new Benlumia007\Backdrop\Framework();
 /**
  * Register Service Provider with the Framework
  */
-$initiator->provider( Initiator\Sidebar\Provider::class );
-$initiator->provider( Initiator\Menu\Provider::class );
+// $initiator->provider( Initiator\Sidebar\Provider::class );
+// $initiator->provider( Initiator\Menu\Provider::class );
+$initiator->provider( Benlumia007\Backdrop\Template\View\View\Provider::class );
 
 /**
  * Boot the Framework
