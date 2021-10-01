@@ -59,12 +59,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-customize.git",
-                "reference": "1683074751de238eda4027f0852cd1ad9098b0ac"
+                "reference": "8c2ca90d0a8c2aa05387404cad6fa114d60e8d71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-customize/zipball/1683074751de238eda4027f0852cd1ad9098b0ac",
-                "reference": "1683074751de238eda4027f0852cd1ad9098b0ac",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-customize/zipball/8c2ca90d0a8c2aa05387404cad6fa114d60e8d71",
+                "reference": "8c2ca90d0a8c2aa05387404cad6fa114d60e8d71",
                 "shasum": ""
             },
             "require": {
@@ -99,7 +99,7 @@
                 "issues": "https://github.com/benlumia007/backdrop-customize/issues",
                 "source": "https://github.com/benlumia007/backdrop-customize/tree/v1.0.0"
             },
-            "time": "2021-10-01T06:26:28+00:00"
+            "time": "2021-10-01T06:54:14+00:00"
         },
         {
             "name": "benlumia007/backdrop-customize-helpers",
@@ -107,16 +107,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-customize-helpers.git",
-                "reference": "851a858accaa8603260dba806525d27b7aed3229"
+                "reference": "68525b2ffe95082f98ce4143c09304a8b70e1a15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-customize-helpers/zipball/851a858accaa8603260dba806525d27b7aed3229",
-                "reference": "851a858accaa8603260dba806525d27b7aed3229",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-customize-helpers/zipball/68525b2ffe95082f98ce4143c09304a8b70e1a15",
+                "reference": "68525b2ffe95082f98ce4143c09304a8b70e1a15",
                 "shasum": ""
             },
             "require": {
-                "benlumia007/backdrop": "v3.0.0.x-dev",
                 "php": ">=7.3.24"
             },
             "default-branch": true,
@@ -150,7 +149,7 @@
                 "issues": "https://github.com/benlumia007/backdrop-customize-helpers/issues",
                 "source": "https://github.com/benlumia007/backdrop-customize-helpers/tree/v1.0.0"
             },
-            "time": "2021-10-01T06:30:32+00:00"
+            "time": "2021-10-01T06:47:25+00:00"
         },
         {
             "name": "benlumia007/backdrop-fontawesome",
