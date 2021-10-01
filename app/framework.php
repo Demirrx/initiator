@@ -16,11 +16,19 @@
 $initiator = new Benlumia007\Backdrop\Framework();
 
 /**
- * Register Service Provider with the Framework
+ * Register default providers
  */
-// $initiator->provider( Initiator\Sidebar\Provider::class );
-// $initiator->provider( Initiator\Menu\Provider::class );
-$initiator->provider( Benlumia007\Backdrop\Template\View\View\Provider::class );
+$initiator->provider( Benlumia007\Backdrop\FontAwesome\Provider::class );
+$initiator->provider( Benlumia007\Backdrop\GoogleFonts\Provider::class );
+$initiator->provider( Benlumia007\Backdrop\Template\Hierarchy\Provider::class );
+$initiator->provider( Benlumia007\Backdrop\Template\Manager\Provider::class );
+$initiator->provider( Benlumia007\Backdrop\Template\View\Provider::class );
+
+/**
+ * Register custom providers
+ */
+$initiator->provider( Initiator\Menu\Provider::class );
+$initiator->provider( Initiator\Sidebar\Provider::class );
 
 /**
  * Boot the Framework
