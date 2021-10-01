@@ -23,8 +23,8 @@
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'initiator' ) ?></a>
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php Benlumia007\Backdrop\Site\display_site_title(); ?>
-			<?php Benlumia007\Backdrop\Site\display_site_description(); ?>
+			<?php Benlumia007\Backdrop\Theme\Site\display_site_title(); ?>
+			<?php Benlumia007\Backdrop\Theme\Site\display_site_description(); ?>
 		</div>
-		<?php Benlumia007\Backdrop\View\display( 'menu', [ 'primary' ] ); ?>
+		<?php Benlumia007\Backdrop\Theme\Menu\display( 'menu', [ 'primary' ] ); ?>
 	</header>

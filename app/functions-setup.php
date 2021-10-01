@@ -149,3 +149,17 @@ add_action( 'after_setup_theme', function() {
 		'default-color'          => '',
 	] );
 } );
+
+/**
+ * Registers custom templates with WordPress.
+ *
+ * @since  1.0.0
+ * @access public
+ * @param  object  $templates
+ * @return void
+ */
+add_action( 'backdrop/templates/register', function( $templates ) {
+	$templates->add( 'template-canvas.php', [
+		'label' => __( 'Content Canvas', 'exhale' )
+	] );
+} );
