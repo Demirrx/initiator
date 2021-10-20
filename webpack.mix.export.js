@@ -25,7 +25,6 @@ let files = [
 	'changelog.md',
 	'functions.php',
 	'index.php',
-	'readme.md',
 	'readme.txt',
 	'screenshot.png',
 	'style.css'
@@ -34,6 +33,7 @@ let files = [
 // Folders to include.
 let folders = [
 	'app',
+	'languages',
 	'public',
 	'vendor'
 ];
