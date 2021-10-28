@@ -1,11 +1,12 @@
 <?php
 /**
- * Initiator ( app/framework.php )
+ * Boot the framework
  *
  * @package   Initiator
- * @copyright Copyright (C) 2019-2021. Benjamin Lu
- * @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author    Benjamin Lu ( https://getbenonit.com )
+ * @author    Benjamin Lu ( benlumia007@gmail.com )
+ * @copyright Copyright (C) 2016-2021. Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://github.com/benlumia007/initiator
  */
 
 /**
@@ -25,7 +26,7 @@ $initiator->provider( Benlumia007\Backdrop\Template\Manager\Provider::class );
 $initiator->provider( Benlumia007\Backdrop\Template\View\Provider::class );
 
 /**
- * Register custom providers
+ * Register custom providers for the theme.
  */
 $initiator->provider( Initiator\Menu\Provider::class );
 $initiator->provider( Initiator\Sidebar\Provider::class );
