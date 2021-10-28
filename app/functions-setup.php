@@ -1,11 +1,12 @@
 <?php
 /**
- * Initiator ( functions-setup.php )
+ * Theme - Setup
  *
  * @package   Initiator
- * @copyright Copyright (C) 2019-2021. Benjamin Lu
- * @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author    Benjamin Lu ( https://benjlu.com )
+ * @author    Benjamin Lu ( benlumia007@gmail.com )
+ * @copyright Copyright (C) 2016-2021. Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://github.com/benlumia007/initiator
  */
 
 /**
@@ -48,16 +49,13 @@ add_action( 'after_setup_theme', function() {
 		 * By adding add_theme_support( 'html5', arrayy() );, this feature when enabled allows the user use of HTML5 markup for
 		 * comment list, comment forms, search forms, galleries, and captions.
 		 */
-		add_theme_support(
-			'html5',
-			array(
-				'comment-list',
-				'comment-form',
-				'search-form',
-				'gallery',
-				'caption',
-			)
-		);
+		add_theme_support( 'html5', [
+			'comment-list',
+			'comment-form',
+			'search-form',
+			'gallery',
+			'caption',
+		] );
 
 		/**
 		 * By adding add_theme_support( 'post-thumbnails' );, this feature when enabled allows you to setup featured images
@@ -65,9 +63,12 @@ add_action( 'after_setup_theme', function() {
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		add_theme_support( 'post-formats', array(
+		/**
+		 * By adding add_theme_support( 'post-formats' );, this feature when enabled allows you to setup post formats.
+		 */
+		add_theme_support( 'post-formats', [
 			'aside',
-		) );
+		] );
 
 		/**
 		 * By add_image_size( 'initiator-small-thumbnails', 324, 324, true );. This should be used for content in the home for blogs.
@@ -93,7 +94,7 @@ add_action( 'after_setup_theme', function() {
 		 * By adding add_theme_support( 'editor-styles' ); and add_editor_style(); to enable styles in the backend of the editor.
 		 */
 		add_theme_support( 'editor-styles' );
-		add_editor_style( 'public/css/editor.css' );
+		add_editor_style( 'public/assets/css/editor.css' );
 
 		/**
 		 * By adding add_theme_support( 'align-wide' );. This will enable alignwide and alignfull.
@@ -123,15 +124,13 @@ add_action( 'after_setup_theme', function() {
 		]
 	);
 
-	register_default_headers(
-		array(
-			'header-image' => array(
-				'url'           => '%s/public/images/header-image.jpg',
-				'thumbnail_url' => '%s/public/images/header-image.jpg',
-				'description'   => esc_html__( 'Header Image', 'initiator' ),
-			),
-		)
-	);
+	register_default_headers( [
+		'header-image' => [
+			'url'           => '%s/public/images/header-image.jpg',
+			'thumbnail_url' => '%s/public/images/header-image.jpg',
+			'description'   => esc_html__( 'Header Image', 'initiator' ),
+		],
+	] );
 } );
 
 /**
@@ -159,7 +158,11 @@ add_action( 'after_setup_theme', function() {
  * @return void
  */
 add_action( 'backdrop/templates/register', function( $templates ) {
-	$templates->add( 'template-canvas.php', [
-		'label' => __( 'Content Canvas', 'exhale' )
+	$templates->add( 'template-left-sidebar.php', [
+		'label' => esc_html__( 'Left Sidebar', 'initiator' )
+	] );
+
+	$templates->add( 'template-right-sidebar.php', [
+		'label' => esc_html__( 'Right Sidebar', 'initiator' )
 	] );
 } );
