@@ -21,8 +21,6 @@ $initiator = new Benlumia007\Backdrop\Framework();
  */
 $initiator->provider( Benlumia007\Backdrop\FontAwesome\Provider::class );
 $initiator->provider( Benlumia007\Backdrop\GoogleFonts\Provider::class );
-$initiator->provider( Benlumia007\Backdrop\Template\Hierarchy\Provider::class );
-$initiator->provider( Benlumia007\Backdrop\Template\Manager\Provider::class );
 
 /**
  * Register custom providers for the theme.
