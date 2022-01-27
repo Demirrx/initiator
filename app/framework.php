@@ -23,7 +23,6 @@ $initiator->provider( Benlumia007\Backdrop\FontAwesome\Provider::class );
 $initiator->provider( Benlumia007\Backdrop\GoogleFonts\Provider::class );
 $initiator->provider( Benlumia007\Backdrop\Template\Hierarchy\Provider::class );
 $initiator->provider( Benlumia007\Backdrop\Template\Manager\Provider::class );
-$initiator->provider( Benlumia007\Backdrop\Template\View\Provider::class );
 
 /**
  * Register custom providers for the theme.

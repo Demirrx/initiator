@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db4828162ae6c84ad6569189d9252772",
+    "content-hash": "ac0c289c8e67f08820b84b3cc32c88c7",
     "packages": [
         {
             "name": "benlumia007/backdrop",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop.git",
-                "reference": "036845ac9af849d8e188735342446146bf014a53"
+                "reference": "98a0e1b765adc1a9677c9b8e6609dd669e935121"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop/zipball/036845ac9af849d8e188735342446146bf014a53",
-                "reference": "036845ac9af849d8e188735342446146bf014a53",
+                "url": "https://api.github.com/repos/benlumia007/backdrop/zipball/98a0e1b765adc1a9677c9b8e6609dd669e935121",
+                "reference": "98a0e1b765adc1a9677c9b8e6609dd669e935121",
                 "shasum": ""
             },
             "require": {
@@ -59,7 +59,7 @@
                 "issues": "https://github.com/benlumia007/backdrop/issues",
                 "source": "https://github.com/benlumia007/backdrop/tree/v3.0.0"
             },
-            "time": "2022-01-27T01:03:44+00:00"
+            "time": "2022-01-27T01:26:02+00:00"
         },
         {
             "name": "benlumia007/backdrop-fontawesome",
@@ -305,54 +305,6 @@
                 "source": "https://github.com/benlumia007/backdrop-template-manager/tree/v1.0.0"
             },
             "time": "2021-11-03T21:12:30+00:00"
-        },
-        {
-            "name": "benlumia007/backdrop-template-view",
-            "version": "v1.0.0.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/benlumia007/backdrop-template-view.git",
-                "reference": "2e92b865fe56f7b8c5e0bd611e6b5c6114a13acf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-template-view/zipball/2e92b865fe56f7b8c5e0bd611e6b5c6114a13acf",
-                "reference": "2e92b865fe56f7b8c5e0bd611e6b5c6114a13acf",
-                "shasum": ""
-            },
-            "require": {
-                "benlumia007/backdrop": "^3.0.0",
-                "benlumia007/backdrop-template-helpers": "v1.0.0.x-dev",
-                "php": ">=7.3.24"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Benlumia007\\Backdrop\\Template\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Benjamin Lu",
-                    "email": "benlumia007@gmail.com",
-                    "homepage": "https://benjlu.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A core that helps you build amazing themes",
-            "homepage": "https://github.com/benlumia007/backdrop-template-view",
-            "keywords": [
-                "wordpress"
-            ],
-            "support": {
-                "issues": "https://github.com/benlumia007/backdrop-template-view/issues",
-                "source": "https://github.com/benlumia007/backdrop-template-view/tree/v1.0.0"
-            },
-            "time": "2021-11-03T21:14:59+00:00"
         }
     ],
     "packages-dev": [],
@@ -364,8 +316,7 @@
         "benlumia007/backdrop-googlefonts": 20,
         "benlumia007/backdrop-template-helpers": 20,
         "benlumia007/backdrop-template-hierarchy": 20,
-        "benlumia007/backdrop-template-manager": 20,
-        "benlumia007/backdrop-template-view": 20
+        "benlumia007/backdrop-template-manager": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

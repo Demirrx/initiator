@@ -32,7 +32,6 @@
         "benlumia007/backdrop-googlefonts": "v1.0.0.x-dev",
         "benlumia007/backdrop-template-helpers": "v1.0.0.x-dev",
         "benlumia007/backdrop-template-hierarchy": "v1.0.0.x-dev",
-        "benlumia007/backdrop-template-manager": "v1.0.0.x-dev",
-        "benlumia007/backdrop-template-view": "v1.0.0.x-dev"
+        "benlumia007/backdrop-template-manager": "v1.0.0.x-dev"
     }
 }
