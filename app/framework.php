@@ -17,12 +17,6 @@
 $initiator = new Benlumia007\Backdrop\Framework();
 
 /**
- * Register default providers
- */
-$initiator->provider( Benlumia007\Backdrop\FontAwesome\Provider::class );
-$initiator->provider( Benlumia007\Backdrop\GoogleFonts\Provider::class );
-
-/**
  * Register custom providers for the theme.
  */
 $initiator->provider( Initiator\Menu\Provider::class );

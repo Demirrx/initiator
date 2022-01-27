@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop.git",
-                "reference": "551b4522ddb11b2cdb9b35076cc84856814536a0"
+                "reference": "184e8175a87583fc5c5e353be6e64d72bb20173c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop/zipball/551b4522ddb11b2cdb9b35076cc84856814536a0",
-                "reference": "551b4522ddb11b2cdb9b35076cc84856814536a0",
+                "url": "https://api.github.com/repos/benlumia007/backdrop/zipball/184e8175a87583fc5c5e353be6e64d72bb20173c",
+                "reference": "184e8175a87583fc5c5e353be6e64d72bb20173c",
                 "shasum": ""
             },
             "require": {
@@ -60,7 +60,7 @@
                 "issues": "https://github.com/benlumia007/backdrop/issues",
                 "source": "https://github.com/benlumia007/backdrop/tree/v4.0.0"
             },
-            "time": "2022-01-27T03:32:32+00:00"
+            "time": "2022-01-27T04:01:55+00:00"
         },
         {
             "name": "benlumia007/backdrop-fontawesome",
