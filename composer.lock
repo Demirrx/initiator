@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5233eeaaa42d2e8a2e9bccda47b58c53",
+    "content-hash": "db4828162ae6c84ad6569189d9252772",
     "packages": [
         {
             "name": "benlumia007/backdrop",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop.git",
-                "reference": "9705ef3bb425afc272f1597962c96b338225269c"
+                "reference": "036845ac9af849d8e188735342446146bf014a53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop/zipball/9705ef3bb425afc272f1597962c96b338225269c",
-                "reference": "9705ef3bb425afc272f1597962c96b338225269c",
+                "url": "https://api.github.com/repos/benlumia007/backdrop/zipball/036845ac9af849d8e188735342446146bf014a53",
+                "reference": "036845ac9af849d8e188735342446146bf014a53",
                 "shasum": ""
             },
             "require": {
@@ -29,7 +29,13 @@
                     "Benlumia007\\Backdrop\\": "src/"
                 },
                 "files": [
-                    "src/Customize/Helpers/functions-helpers.php"
+                    "src/Customize/Helpers/functions-helpers.php",
+                    "src/Theme/Entry/functions-entry.php",
+                    "src/Theme/Menu/functions-menu.php",
+                    "src/Theme/Sidebar/functions-sidebar.php",
+                    "src/Theme/Site/functions-site.php",
+                    "src/Theme/functions-filter.php",
+                    "/src/Theme/functions-setup.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -53,7 +59,7 @@
                 "issues": "https://github.com/benlumia007/backdrop/issues",
                 "source": "https://github.com/benlumia007/backdrop/tree/v3.0.0"
             },
-            "time": "2022-01-27T00:37:53+00:00"
+            "time": "2022-01-27T01:03:44+00:00"
         },
         {
             "name": "benlumia007/backdrop-fontawesome",
@@ -347,63 +353,6 @@
                 "source": "https://github.com/benlumia007/backdrop-template-view/tree/v1.0.0"
             },
             "time": "2021-11-03T21:14:59+00:00"
-        },
-        {
-            "name": "benlumia007/backdrop-theme",
-            "version": "v1.0.0.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/benlumia007/backdrop-theme.git",
-                "reference": "f8e015b519c41f6cd4b4d28ef069f2c021b6ca49"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-theme/zipball/f8e015b519c41f6cd4b4d28ef069f2c021b6ca49",
-                "reference": "f8e015b519c41f6cd4b4d28ef069f2c021b6ca49",
-                "shasum": ""
-            },
-            "require": {
-                "benlumia007/backdrop": "^3.0.0",
-                "benlumia007/backdrop-template-helpers": "v1.0.0.x-dev",
-                "php": ">=7.3.24"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Benlumia007\\Backdrop\\Theme\\": "src/"
-                },
-                "files": [
-                    "src/Entry/functions-entry.php",
-                    "src/Menu/functions-menu.php",
-                    "src/Sidebar/functions-sidebar.php",
-                    "src/Site/functions-site.php",
-                    "src/functions-filters.php",
-                    "src/functions-setup.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Benjamin Lu",
-                    "email": "benlumia007@gmail.com",
-                    "homepage": "https://benjlu.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A core that helps you build amazing themes",
-            "homepage": "https://github.com/benlumia007/backdrop-theme",
-            "keywords": [
-                "wordpress"
-            ],
-            "support": {
-                "issues": "https://github.com/benlumia007/backdrop-theme/issues",
-                "source": "https://github.com/benlumia007/backdrop-theme/tree/v1.0.0"
-            },
-            "time": "2021-11-03T21:10:03+00:00"
         }
     ],
     "packages-dev": [],
@@ -416,8 +365,7 @@
         "benlumia007/backdrop-template-helpers": 20,
         "benlumia007/backdrop-template-hierarchy": 20,
         "benlumia007/backdrop-template-manager": 20,
-        "benlumia007/backdrop-template-view": 20,
-        "benlumia007/backdrop-theme": 20
+        "benlumia007/backdrop-template-view": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
