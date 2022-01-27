@@ -27,8 +27,6 @@
     },
     "require": {
         "php": ">=7.3.24",
-        "benlumia007/backdrop": "v4.0.0.x-dev",
-        "benlumia007/backdrop-fontawesome": "v1.0.0.x-dev",
-        "benlumia007/backdrop-googlefonts": "v1.0.0.x-dev"
+        "benlumia007/backdrop": "v4.0.0.x-dev"
     }
 }

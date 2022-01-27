@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aeb3e36f8ec35499a09013a03977d892",
+    "content-hash": "985aa0f217121773b53fe4b0b873870b",
     "packages": [
         {
             "name": "benlumia007/backdrop",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop.git",
-                "reference": "184e8175a87583fc5c5e353be6e64d72bb20173c"
+                "reference": "2f408c7f113bf0e1231821e5d8cd515082853e78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop/zipball/184e8175a87583fc5c5e353be6e64d72bb20173c",
-                "reference": "184e8175a87583fc5c5e353be6e64d72bb20173c",
+                "url": "https://api.github.com/repos/benlumia007/backdrop/zipball/2f408c7f113bf0e1231821e5d8cd515082853e78",
+                "reference": "2f408c7f113bf0e1231821e5d8cd515082853e78",
                 "shasum": ""
             },
             "require": {
@@ -60,112 +60,14 @@
                 "issues": "https://github.com/benlumia007/backdrop/issues",
                 "source": "https://github.com/benlumia007/backdrop/tree/v4.0.0"
             },
-            "time": "2022-01-27T04:01:55+00:00"
-        },
-        {
-            "name": "benlumia007/backdrop-fontawesome",
-            "version": "v1.0.0.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/benlumia007/backdrop-fontawesome.git",
-                "reference": "810ecd4f528955c145c0c4dc3a4745b1529e8d18"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-fontawesome/zipball/810ecd4f528955c145c0c4dc3a4745b1529e8d18",
-                "reference": "810ecd4f528955c145c0c4dc3a4745b1529e8d18",
-                "shasum": ""
-            },
-            "require": {
-                "benlumia007/backdrop": "^4.0.0.x-dev",
-                "php": ">=7.3.24"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Benlumia007\\Backdrop\\FontAwesome\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Benjamin Lu",
-                    "email": "benlumia007@gmail.com",
-                    "homepage": "https://benjlu.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A core that helps you build amazing themes",
-            "homepage": "https://github.com/benlumia007/backdrop-fontawesome",
-            "keywords": [
-                "wordpress"
-            ],
-            "support": {
-                "issues": "https://github.com/benlumia007/backdrop-fontawesome/issues",
-                "source": "https://github.com/benlumia007/backdrop-fontawesome/tree/v1.0.0"
-            },
-            "time": "2022-01-27T02:16:23+00:00"
-        },
-        {
-            "name": "benlumia007/backdrop-googlefonts",
-            "version": "v1.0.0.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/benlumia007/backdrop-googlefonts.git",
-                "reference": "ce7e0e281dd096b58e180785d2c2b505bffd78ef"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-googlefonts/zipball/ce7e0e281dd096b58e180785d2c2b505bffd78ef",
-                "reference": "ce7e0e281dd096b58e180785d2c2b505bffd78ef",
-                "shasum": ""
-            },
-            "require": {
-                "benlumia007/backdrop": "^4.0.0.x-dev",
-                "php": ">=7.3.24"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Benlumia007\\Backdrop\\GoogleFonts\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Benjamin Lu",
-                    "email": "benlumia007@gmail.com",
-                    "homepage": "https://benjlu.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A core that helps you build amazing themes",
-            "homepage": "https://github.com/benlumia007/backdrop-googlefonts",
-            "keywords": [
-                "wordpress"
-            ],
-            "support": {
-                "issues": "https://github.com/benlumia007/backdrop-googlefonts/issues",
-                "source": "https://github.com/benlumia007/backdrop-googlefonts/tree/v1.0.0"
-            },
-            "time": "2022-01-27T02:18:06+00:00"
+            "time": "2022-01-27T04:16:01+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "benlumia007/backdrop": 20,
-        "benlumia007/backdrop-fontawesome": 20,
-        "benlumia007/backdrop-googlefonts": 20
+        "benlumia007/backdrop": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
