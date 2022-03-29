@@ -25,9 +25,6 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Benlumia007\\Backdrop\\": "src/"
-                },
                 "files": [
                     "src/Customize/Helpers/functions-helpers.php",
                     "src/Template/functions-helpers.php",
@@ -37,7 +34,10 @@
                     "src/Theme/Site/functions-site.php",
                     "src/Theme/functions-filter.php",
                     "/src/Theme/functions-setup.php"
-                ]
+                ],
+                "psr-4": {
+                    "Benlumia007\\Backdrop\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
