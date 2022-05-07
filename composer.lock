@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d29290feab21cd789dd1882af06780d0",
+    "content-hash": "bbfa24e6fc00b3e044a2e0f72341a599",
     "packages": [
         {
             "name": "benlumia007/backdrop",
-            "version": "4.0.3",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop.git",
-                "reference": "f8c2dcc87c03a7267029b5604929c2258cd62baf"
+                "reference": "7f03fe0b7e534182b3ce05f59c3d1575a8082850"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop/zipball/f8c2dcc87c03a7267029b5604929c2258cd62baf",
-                "reference": "f8c2dcc87c03a7267029b5604929c2258cd62baf",
+                "url": "https://api.github.com/repos/benlumia007/backdrop/zipball/7f03fe0b7e534182b3ce05f59c3d1575a8082850",
+                "reference": "7f03fe0b7e534182b3ce05f59c3d1575a8082850",
                 "shasum": ""
             },
             "require": {
@@ -27,6 +27,7 @@
             "autoload": {
                 "files": [
                     "src/Customize/Helpers/functions-helpers.php",
+                    "src/Mix/functions-mix.php",
                     "src/Template/functions-helpers.php",
                     "src/Theme/Entry/functions-entry.php",
                     "src/Theme/Menu/functions-menu.php",
@@ -58,9 +59,9 @@
             ],
             "support": {
                 "issues": "https://github.com/benlumia007/backdrop/issues",
-                "source": "https://github.com/benlumia007/backdrop/tree/4.0.3"
+                "source": "https://github.com/benlumia007/backdrop/tree/2.0.0"
             },
-            "time": "2022-05-02T01:50:46+00:00"
+            "time": "2022-05-07T16:06:30+00:00"
         }
     ],
     "packages-dev": [],
