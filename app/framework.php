@@ -19,7 +19,6 @@ $initiator = new Benlumia007\Backdrop\Framework();
 /**
  * Register custom providers for the theme.
  */
-$initiator->provider( Initiator\Mix\Provider::class );
 $initiator->provider( Initiator\Menu\Provider::class );
 $initiator->provider( Initiator\Sidebar\Provider::class );
 

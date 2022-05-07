@@ -14,7 +14,7 @@
  */
 namespace Initiator;
 use Benlumia007\Backdrop\App;
-
+use function Benlumia007\Backdrop\Mix\asset;
 /**
  * Enqueue Scripts and Styles
  *
@@ -30,7 +30,8 @@ add_action( 'wp_enqueue_scripts', function() {
 	 * Rather than enqueue the main stylesheet, we are going to enqueue sceen.css since all of the styles will
 	 * go here. We only need parse the information for the Theme in style.css so that it can be activated.
 	 */
-	wp_enqueue_style( 'initiator-screen', asset( 'assets/css/screen.css' ), null, null );
+	wp_enqueue_style( 'initiator-screen', asset( 'assets/css/screen.css' ), null, null, true );
+	wp_enqueue_script( 'initiator-app', asset( 'assets/js/app.js' ), null, null, true );
 
 	/**
 	 * This allows users to comment by clicking on reply so that it gets nested.
@@ -58,18 +59,3 @@ add_action( 'wp_enqueue_scripts', function() {
 add_action( 'enqueue_block_editor_assets', function() {
 	wp_enqueue_style( 'initiator-custom-fonts', get_parent_theme_file_uri( '/vendor/benlumia007/backdrop-googlefonts/assets/fonts/custom-fonts.css' ), array(), '1.0.0' );
 } );
-
-function asset( $path ) {
-
-	// Get the Laravel Mix manifest.
-	$manifest = App::resolve( 'exhale/mix' );
-
-	// Make sure to trim any slashes from the front of the path.
-	$path = '/' . ltrim( $path, '/' );
-
-	if ( $manifest && isset( $manifest[ $path ] ) ) {
-		$path = $manifest[ $path ];
-	}
-
-	return get_theme_file_uri( 'public' . $path );
-}
