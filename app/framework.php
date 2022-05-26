@@ -16,11 +16,14 @@
  */
 $initiator = new Benlumia007\Backdrop\Framework();
 
+$initiator->provider( Benlumia007\Backdrop\Mix\Manifest\Provider::class );
+$initiator->provider( Benlumia007\Backdrop\Template\View\Provider::class );
+
 /**
  * Register custom providers for the theme.
  */
-$initiator->provider( Initiator\Menu\Provider::class );
-$initiator->provider( Initiator\Sidebar\Provider::class );
+// $initiator->provider( Initiator\Menu\Provider::class );
+// $initiator->provider( Initiator\Sidebar\Provider::class );
 
 /**
  * Boot the Framework

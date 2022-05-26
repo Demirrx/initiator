@@ -12,7 +12,7 @@
  * Define namespace
  */
 namespace Initiator\Sidebar;
-use Benlumia007\Backdrop\Tools\ServiceProvider;
+use Benlumia007\Backdrop\Support\ServiceProvider;
 use Initiator\Sidebar\Component;
 
 /**

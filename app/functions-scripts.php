@@ -14,7 +14,7 @@
  */
 namespace Initiator;
 use Benlumia007\Backdrop\App;
-use function Benlumia007\Backdrop\Mix\asset;
+use function Benlumia007\Backdrop\Mix\Manifest\asset;
 /**
  * Enqueue Scripts and Styles
  *
@@ -30,8 +30,8 @@ add_action( 'wp_enqueue_scripts', function() {
 	 * Rather than enqueue the main stylesheet, we are going to enqueue sceen.css since all of the styles will
 	 * go here. We only need parse the information for the Theme in style.css so that it can be activated.
 	 */
-	wp_enqueue_style( 'initiator-screen', asset( 'assets/css/screen.css' ), null, null, true );
-	wp_enqueue_script( 'initiator-app', asset( 'assets/js/app.js' ), null, null, true );
+	wp_enqueue_style( 'initiator-screen', asset( 'assets/css/screen.css' ), null, null );
+	wp_enqueue_script( 'initiator-app', asset( 'assets/js/app.js' ), [ 'jquery' ], null, true );
 
 	/**
 	 * This allows users to comment by clicking on reply so that it gets nested.
