@@ -16,6 +16,7 @@
  */
 $initiator = new Benlumia007\Backdrop\Framework();
 
+$initiator->provider( Benlumia007\Backdrop\GoogleFonts\Provider::class );
 $initiator->provider( Benlumia007\Backdrop\Mix\Manifest\Provider::class );
 $initiator->provider( Benlumia007\Backdrop\Template\View\Provider::class );
 
