@@ -2,7 +2,7 @@
 
 namespace Initiator\Menu;
 use Benlumia007\Backdrop\Theme\Menu\Component as MenuContract;
-use function Benlumia007\Backdrop\Mix\asset;
+use function Benlumia007\Backdrop\Mix\Manifest\asset;
 
 class Component extends MenuContract {
     public function menus() {
