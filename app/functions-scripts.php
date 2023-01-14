@@ -13,8 +13,9 @@
  * Define namespace
  */
 namespace Initiator;
+
 use Benlumia007\Backdrop\App;
-use function Benlumia007\Backdrop\Mix\Manifest\asset;
+use function Backdrop\Mix\Manifest\asset;
 /**
  * Enqueue Scripts and Styles
  *

@@ -12,7 +12,8 @@
  * Define namespace
  */
 namespace Initiator\Menu;
-use Benlumia007\Backdrop\Support\ServiceProvider;
+
+use Backdrop\Core\ServiceProvider;
 use Initiator\Menu\Component;
 
 /**
@@ -30,11 +31,11 @@ class Provider extends ServiceProvider {
 	 * @access public
 	 * @return void
 	 */
-	public function register() {
+	public function register(): void {
 		$this->app->singleton( 'menu', Component::class );
     }
     
-    public function boot() {
+    public function boot(): void {
         $this->app->resolve( 'menu' )->boot();
     }
 }

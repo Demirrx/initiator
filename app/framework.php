@@ -14,22 +14,22 @@
  *x
  * This will create an instance of the framework allowing you to initialize the theme.
  */
-$initiator = new Benlumia007\Backdrop\Framework();
+$initiator = Backdrop\booted() ? Backdrop\app() : new Backdrop\Core\Application();
 
 /**
  * Register default providers.
  */
-$initiator->provider( Benlumia007\Backdrop\FontAwesome\Provider::class );
-$initiator->provider( Benlumia007\Backdrop\Fonts\Provider::class );
-$initiator->provider( Benlumia007\Backdrop\Mix\Manifest\Provider::class );
-$initiator->provider( Benlumia007\Backdrop\Template\Hierarchy\Provider::class );
-$initiator->provider( Benlumia007\Backdrop\Template\Manager\Provider::class );
-$initiator->provider( Benlumia007\Backdrop\Template\View\Provider::class );
+$initiator->provider( Backdrop\FontAwesome\Provider::class );
+$initiator->provider( Backdrop\Fonts\Provider::class );
+$initiator->provider( Backdrop\Template\Hierarchy\Provider::class );
+$initiator->provider( Backdrop\Template\Manager\Provider::class );
+$initiator->provider( Backdrop\Template\View\Provider::class );
 
 /**
  * Register custom providers for the theme.
  */
 $initiator->provider( Initiator\Menu\Provider::class );
+$initiator->provider( Initiator\Mix\Provider::class );
 $initiator->provider( Initiator\Sidebar\Provider::class );
 
 /**

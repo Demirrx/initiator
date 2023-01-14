@@ -10,7 +10,8 @@
 
 
 namespace Initiator\Sidebar;
-use Benlumia007\Backdrop\Theme\Sidebar\Component as SidebarContract;
+
+use Backdrop\Theme\Sidebar\Component as SidebarContract;
 
 class Component extends SidebarContract {
     public function sidebars() {

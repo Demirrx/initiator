@@ -19,6 +19,9 @@
             "Initiator\\": "app/"
 		},
 		"files":[
+            "app/Entry/functions-entry.php",
+            "app/Mix/functions-helpers.php",
+            "app/Site/functions-site.php",
 			"app/framework.php",
 			"app/functions-filters.php",
 			"app/functions-scripts.php",
