@@ -20,7 +20,6 @@
 		},
 		"files":[
             "app/Entry/functions-entry.php",
-            "app/Mix/functions-helpers.php",
             "app/Site/functions-site.php",
 			"app/framework.php",
 			"app/functions-filters.php",
@@ -29,7 +28,7 @@
 		]
     },
     "require": {
-        "php": ">=7.4.29",
+        "php": ">=7.0",
         "benlumia007/backdrop": "^2.0.0",
 		"benlumia007/backdrop-fontawesome": "^1.0.0",
 		"benlumia007/backdrop-fonts": "^1.0.0",
