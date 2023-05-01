@@ -1,11 +1,12 @@
 <?php
 /**
- * Backdrop Core ( src/Tools/ServiceProvider.php )
+ * Default menu provider
  *
- * @package   Backdrop Core
- * @copyright Copyright (C) 2019-2021. Benjamin Lu
- * @license   GNU General PUblic License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author    Benjamin Lu ( https://getbenonit.com )
+ * @package   Initiator
+ * @author    Benjamin Lu <benlumia007@gmail.com>
+ * @copyright Copyright (C) 2019-2023. Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://github.com/benlumia007/initiator
  */
 
 /**
@@ -31,11 +32,11 @@ class Provider extends ServiceProvider {
 	 * @access public
 	 * @return void
 	 */
-	public function register(): void {
-		$this->app->singleton( 'menu', Component::class );
+	public function register() {
+		$this->app->singleton( 'initiator/menu', Component::class );
     }
     
-    public function boot(): void {
-        $this->app->resolve( 'menu' )->boot();
+    public function boot() {
+        $this->app->resolve( 'initiator/menu' )->boot();
     }
 }

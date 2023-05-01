@@ -31,12 +31,12 @@ class Provider extends ServiceProvider {
 	 * @access public
 	 * @return void
 	 */
-	public function register(): void {
-		$this->app->singleton( 'sidebar', Component::class );
+	public function register() {
+		$this->app->singleton( 'initiator/sidebar', Component::class );
 
     }
     
-    public function boot(): void {
-        $this->app->resolve( 'sidebar' )->boot();
+    public function boot() {
+        $this->app->resolve( 'initiator/sidebar' )->boot();
     }
 }

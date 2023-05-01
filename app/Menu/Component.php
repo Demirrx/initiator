@@ -3,7 +3,7 @@
 namespace Initiator\Menu;
 
 use Backdrop\Theme\Menu\Component as MenuContract;
-use function Initiator\Mix\asset;
+use function Backdrop\Mix\Manifest\asset;
 
 class Component extends MenuContract {
     public function menus() {
