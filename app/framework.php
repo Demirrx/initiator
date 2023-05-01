@@ -21,6 +21,7 @@ $initiator = Backdrop\booted() ? Backdrop\app() : new Backdrop\Core\Application(
  */
 $initiator->provider( Backdrop\FontAwesome\Provider::class );
 $initiator->provider( Backdrop\Fonts\Provider::class );
+$initiator->provider( Backdrop\Mix\Manifest\Provider::class );
 $initiator->provider( Backdrop\Template\Hierarchy\Provider::class );
 $initiator->provider( Backdrop\Template\Manager\Provider::class );
 $initiator->provider( Backdrop\Template\View\Provider::class );
@@ -29,7 +30,6 @@ $initiator->provider( Backdrop\Template\View\Provider::class );
  * Register custom providers for the theme.
  */
 $initiator->provider( Initiator\Menu\Provider::class );
-$initiator->provider( Initiator\Mix\Provider::class );
 $initiator->provider( Initiator\Sidebar\Provider::class );
 
 /**
