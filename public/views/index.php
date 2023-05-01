@@ -3,29 +3,17 @@
  * Default index template
  *
  * @package   Initiator
- * @author    Benjamin Lu ( benlumia007@gmail.com )
- * @copyright Copyright (C) 2019-2021. Benjamin Lu
+ * @author    Benjamin Lu <benlumia007@gmail.com>
+ * @copyright 2019-2023. Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
  * @link      https://github.com/benlumia007/initiator
  */
-?>
-<?php $engine = Backdrop\App::resolve( 'view/engine' ); ?>
-<?php $engine->display( 'header' ); ?>
-	<section id="content" class="site-content">
-		<div id="layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'no-sidebar' ) ); ?>">
-			<main id="main" class="content-area">
-				<?php
-					if ( have_posts() ) :
-						while ( have_posts() ) : the_post();
-							$engine->display( 'content', get_post_format()  );
-						endwhile;
-						the_posts_pagination();
-					else :
-							$engine->display( 'content/none' );
-					endif;
-				?>
-			</main>
-			<?php Backdrop\Theme\Sidebar\display( 'sidebar', [ 'primary' ] ); ?>
-		</div>
-	</section>
-<?php $engine->display( 'footer' ); ?>
+
+// Loads header/*.php template
+Backdrop\Template\View\display( 'header', Backdrop\Template\Hierarchy\hierarchy() );
+
+// Loads content/*.php template
+Backdrop\Template\View\display( 'content' );
+
+// Loads footer/*.php template
+Backdrop\Template\View\display( 'footer', Backdrop\Template\Hierarchy\hierarchy() );
