@@ -27,5 +27,5 @@
 			<?php Initiator\Site\display_site_title(); ?>
 			<?php Initiator\Site\display_site_description(); ?>
 		</div>
-		<?php Backdrop\Template\View\display( 'menu', 'primary', [ 'location' => 'primary'] ); ?>
+		<?php Backdrop\View\display( 'menu', 'primary', [ 'location' => 'primary'] ); ?>
 	</header>

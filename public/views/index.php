@@ -10,10 +10,10 @@
  */
 
 // Loads header/*.php template
-Backdrop\Template\View\display( 'header', Backdrop\Template\Hierarchy\hierarchy() );
+Backdrop\View\display( 'header', Backdrop\Template\Hierarchy\hierarchy() );
 
 // Loads content/*.php template
-Backdrop\Template\View\display( 'content', Backdrop\Template\Hierarchy\hierarchy() );
+Backdrop\View\display( 'content', Backdrop\Template\Hierarchy\hierarchy() );
 
 // Loads footer/*.php template
-Backdrop\Template\View\display( 'footer', Backdrop\Template\Hierarchy\hierarchy() );
+Backdrop\View\display( 'footer', Backdrop\Template\Hierarchy\hierarchy() );

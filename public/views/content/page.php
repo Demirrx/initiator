@@ -13,7 +13,7 @@
 	<main id="main" class="content-area">
 		<?php
 			while ( have_posts() ) : the_post();
-				Backdrop\Template\View\display( 'entry/page' );
+				Backdrop\View\display( 'entry/page' );
 			endwhile;
 		?>
 	</main>
