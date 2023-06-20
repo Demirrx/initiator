@@ -9,4 +9,4 @@
  */
 
 // Load the index template.
-Backdrop\Template\View\display( 'index' );
+Backdrop\View\display( 'index' );
