@@ -2,7 +2,7 @@
 /**
  * Default page/default template
  *
- * @package   rejuvenate
+ * @package   initiator
  * @author    Benjamin Lu <benlumia007@gmail.com>
  * @copyright 2014-2022. Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
@@ -21,11 +21,11 @@
 		<?php
 			wp_link_pages(
 				array(
-					'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'rejuvenate' ),
+					'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'initiator' ),
 					'after'       => '</div>',
 					'link_before' => '<span>',
 					'link_after'  => '</span>',
-					'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'rejuvenate' ) . ' </span>%',
+					'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'initiator' ) . ' </span>%',
 					'separator'   => '<span class="screen-reader-text">,</span> ',
 				)
 			);

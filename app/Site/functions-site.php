@@ -2,7 +2,7 @@
 /**
  * Theme - Site
  *
- * @package   Succotash
+ * @package   initiator
  * @author    Benjamin Lu <benlumia007@gmail.com>
  * @copyright 2014-2022. Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
@@ -55,7 +55,7 @@ function render_site_title( array $args = [] ) {
 			$link // phpcs:ignore
 		);
 	}
-	return apply_filters( 'succotash/render/site/title', $html );
+	return apply_filters( 'initiator/render/site/title', $html );
 }
 
 /**
@@ -95,7 +95,7 @@ function render_site_description( array $args = [] ) {
 			$title
 		);
 	}
-	return apply_filters( 'succotash/render/site/description', $html );
+	return apply_filters( 'initiator/render/site/description', $html );
 }
 
 /**
@@ -134,7 +134,7 @@ function render_site_link( array $args = [] ) {
 		esc_url( home_url( '/' ) ),
 		sprintf( $args['text'], get_bloginfo( 'name' ) )
 	);
-	return apply_filters( 'succotash/render/site/link', $html );
+	return apply_filters( 'initiator/render/site/link', $html );
 }
 
 /**
@@ -168,10 +168,10 @@ function render_wp_link( array $args = [] ) {
 	$html = sprintf(
 		'<a class="%1$s" href="%2$s">%3$s</a>',
 		esc_attr( $args['class'] ),
-		esc_url( __( 'https://wordpress.org', 'succotash' ) ),
-		sprintf( $args['text'], esc_html__( 'WordPress', 'succotash' ) )
+		esc_url( __( 'https://wordpress.org', 'initiator' ) ),
+		sprintf( $args['text'], esc_html__( 'WordPress', 'initiator' ) )
 	);
-	return apply_filters( 'succotash/render/wp/link', $html );
+	return apply_filters( 'initiator/render/wp/link', $html );
 }
 
 function display_theme_link( array $args = [] ) {
@@ -210,7 +210,7 @@ function render_theme_link( array $args = [] ) {
 		wp_kses( $theme->display( 'Name' ), $allowed )
 	);
 
-	return apply_filters( 'succotash/render/theme/link', $args['before'] . $html . $args['after'] );
+	return apply_filters( 'initiator/render/theme/link', $args['before'] . $html . $args['after'] );
 }
 
 
@@ -250,7 +250,7 @@ function render_home_link( array $args = [] ) {
 		esc_url( home_url() ),
 		sprintf( $args['text'], get_bloginfo( 'name', 'display' ) )
 	);
-	return apply_filters( 'succotash/render/home/link', $args['before'] . $html . $args['after'] );
+	return apply_filters( 'initiator/render/home/link', $args['before'] . $html . $args['after'] );
 }
 
 /**
@@ -284,8 +284,8 @@ function render_cp_link( array $args = [] ) {
 	$html = sprintf(
 		'<a class="%1$s" href="%2$s">%3$s</a>',
 		esc_attr( $args['class'] ),
-		esc_url( __( 'https://classicpress.net', 'succotash' ) ),
-		sprintf( $args['text'], esc_html__( 'ClassicPress', 'succotash' ) )
+		esc_url( __( 'https://classicpress.net', 'initiator' ) ),
+		sprintf( $args['text'], esc_html__( 'ClassicPress', 'initiator' ) )
 	);
-	return apply_filters( 'succotash/render/cp/link', $html );
+	return apply_filters( 'initiator/render/cp/link', $html );
 }

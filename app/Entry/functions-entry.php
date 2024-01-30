@@ -2,7 +2,7 @@
 /**
  * Theme - Entry
  *
- * @package   Succotash
+ * @package   initiator
  * @author    Benjamin Lu <benlumia007@gmail.com>
  * @copyright Copyright (C) 2022. Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
@@ -44,7 +44,7 @@ function render_title( array $args = [] ) {
 		$text
 	);
 
-	return apply_filters( 'succotash/display/title', $args['before'] . $html . $args['after'] );
+	return apply_filters( 'initiator/display/title', $args['before'] . $html . $args['after'] );
 }
 
 /**
@@ -85,7 +85,7 @@ function render_permalink( array $args = [] ) {
 		sprintf( $args['text'], esc_url( $url ) )
 	);
 
-	return apply_filters( 'succotash/display/permalink', $args['before'] . $html . $args['after'] );
+	return apply_filters( 'initiator/display/permalink', $args['before'] . $html . $args['after'] );
 }
 
 /**
@@ -123,7 +123,7 @@ function render_author( array $args = [] ) {
 
 	$html = sprintf( '<i class="fas fa-user"></i><span class="%s">%s</span>', esc_attr( $args['class'] ), $author );
 
-	return apply_filters( 'succotash/display/author', $args['before'] . $html . $args['after'] );
+	return apply_filters( 'initiator/display/author', $args['before'] . $html . $args['after'] );
 }
 
 /**
@@ -164,7 +164,7 @@ function render_date( array $args = [] ) {
 		sprintf( $args['text'], get_the_date( $args['format'] ) )
 	);
 
-	return apply_filters( 'succotash/display/date', $args['before'] . $html . $args['after'] );
+	return apply_filters( 'initiator/display/date', $args['before'] . $html . $args['after'] );
 }
 
 /**
@@ -215,7 +215,7 @@ function render_comments_link( array $args = [] ) {
 		$text
 	);
 
-	return apply_filters( 'succotash/display/comments/link', $args['before'] . $html . $args['after'] );
+	return apply_filters( 'initiator/display/comments/link', $args['before'] . $html . $args['after'] );
 }
 
 function display_categories( array $args = [] ) {
@@ -239,7 +239,7 @@ function render_categories( array $args = [] ) {
 		'taxonomy' => 'category',
 		'text'     => '%s',
 		'class'    => 'cat-list',
-		'sep'      => _x( ' | ', 'taxonomy terms separator', 'succotash' ),
+		'sep'      => _x( ' | ', 'taxonomy terms separator', 'initiator' ),
 		'before'   => '<div class="cat-link">',
 		'after'    => '</div>'
 	] );
@@ -262,7 +262,7 @@ function render_categories( array $args = [] ) {
 		$html = $args['before'] . $html . $args['after'];
 	}
 
-	return apply_filters( 'succotash/display/categories', $html );
+	return apply_filters( 'initiator/display/categories', $html );
 }
 
 
@@ -287,7 +287,7 @@ function render_tags( array $args = [] ) {
 		'taxonomy' => 'post_tag',
 		'text'     => '%s',
 		'class'    => 'tag-list',
-		'sep'      => _x( ' | ', 'taxonomy terms separator', 'succotash' ),
+		'sep'      => _x( ' | ', 'taxonomy terms separator', 'initiator' ),
 		'before'   => '<div class="tag-link">',
 		'after'    => '</div>'
 	] );
@@ -310,5 +310,5 @@ function render_tags( array $args = [] ) {
 		$html = $args['before'] . $html . $args['after'];
 	}
 
-	return apply_filters( 'succotash/display/tags', $html );
+	return apply_filters( 'initiator/display/tags', $html );
 }

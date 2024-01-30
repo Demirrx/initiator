@@ -2,7 +2,7 @@
 
 if ( has_nav_menu( $data->location ) ) { ?>
 	<nav id="primary" class="primary-menu">
-		<button class="menu-toggle" aria-conrol="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'rejuvenate' ); ?></button>
+		<button class="menu-toggle" aria-conrol="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'initiator' ); ?></button>
 		<?php
 			wp_nav_menu(
 				array(
