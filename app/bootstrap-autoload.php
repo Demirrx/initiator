@@ -6,11 +6,11 @@
  * to run. Classes utilize the PSR-4 autoloader in Composer which is defined in
  * `composer.json`.
  *
- * @package   Creativity
+ * @package   Initiator
  * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2023. Benjamin Lu
+ * @copyright 2019-2024. Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://luthemes.com/portfolio/creativity
+ * @link      https://luthemes.com/portfolio/initiator
  */
 
 /** ------------------------------------------------------------------------------------------
@@ -32,7 +32,7 @@ if ( file_exists( get_parent_theme_file_path( '/vendor/autoload.php' ) ) ) {
 # files to the array without the `.php` extension.
 
 array_map( function( $file ) {
-	require_once( get_parent_theme_file_path( "app/{$file}.php" ) ); // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+	require_once( get_parent_theme_file_path( "app/{$file}.php" ) );
 }, [
 	'Site/functions-site',
 	'functions-extras',
